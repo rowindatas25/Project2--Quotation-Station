@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+  <link rel="stylesheet" type="text/css" href="/main.css">
 </head>
 <body>
-	
+  <div>
+    <form action="/users" method="POST">
+
+      <label for="email">Email</label><br>
+      <input id="email" type="text" name="user[email]" placeholder="john.doe@example.com"><br>
+
+      <label for="password">Password</label><br>
+      <input id="password" type="password" name="user[password]" placeholder="P4ssw0rd1234"><br>
+
+      <input type="submit" value="Sign Up">
+
+    </form>
+  </div>
 </body>
 </html>

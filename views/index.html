@@ -1,14 +1,19 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div>
+      <h1 class="text-center">Quotation Station</h1>
+      <form action="/users/login" method="post">
+        <input placeholder="username" name="user[email]" type="text"/>
+        <input placeholder="password" name="user[password]" type="password"/>
+        <input type="submit" value="Login">
+      </form>
 
-<!-- Log in page. -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>
-	Quotation Station</title>
-	<h1>Quotation Station</h1>
-</head>
-<body>
-	
-</body>
+      <div class="text-center">
+        <a href="/users/new"><small>Sign Up</small></a>
+      </div>
+    </div>
+  </body>
 </html>

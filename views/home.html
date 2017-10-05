@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <a href="/users/logout" class="logout">logout</a>
+
+    <div>
+      <div class="thread">
+        {{#messages}}
+
+          {{#user_sent}}
+            <div class="from-user">
+              <p>{{message}}</p>
+            </div>
+          {{/user_sent}}
+
+          {{^user_sent}}
+            <div class="from-ai">
+              <p>{{message}}</p>
+            </div>
+          {{/user_sent}}
+
+          <div class="clear"></div>
+        {{/messages}}
+      </div>
+
+      <div>
+        <form action="/messages/new" method="post">
+          <input placeholder="new message..." name="input" type="text" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
