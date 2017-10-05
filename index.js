@@ -8,11 +8,19 @@ const port = 3000;
 
 const app  = express();
 
+// declaring mustache to use in the HTML
+
+
 app.engine('html', mustacheExpress());
 
 app.set('view engine', 'html');
 
+//setting the route into the views folder
+
 app.set('views', __dirname + '/views');
+
+// use the public directory 
+
 
 app.use(express.static(__dirname + '/public'));
 
@@ -33,13 +41,17 @@ app.use(auth.passportSession);
 // END PASSPORT STUFF
 // ====================================================================
 
-
+// MUST BE TRUE
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+
+// setting the route to the controllers
 app.use('/quote', require('./controllers/quote'));
 app.use('/users', require('./controllers/users'));
 
+
+// Initial call to the home page
 app.get('/', (req, res) => {
 	res.render('index');
 });

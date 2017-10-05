@@ -11,7 +11,17 @@ const auth = require('../services/auth');
 // users index
 
 
+// Sign up page.
 
+
+// Post to create new user (params are username/password).
+
+
+// Post to login (params are username/password).
+
+
+
+// Logout.
 
 
 
