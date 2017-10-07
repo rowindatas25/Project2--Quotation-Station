@@ -36,8 +36,8 @@ router.get('/new',
 
 //show edit quote view with router.get
 
-// router.get('quotes/edit', Quote.findById, (req, res) => {
-// res.render('quotes/edit', res.locals.quoteData);
+// router.get('/edit', (req, res) => {
+// res.render('quotes/edit');
 // })
 
 // show quotes
@@ -56,15 +56,17 @@ router.get('/show',
 	});
 
 
-//show single quote view with router.get
+// show single quote view with router.get
 
-// router.get('/:id', auth.restrict, 
-//     Quote.findById,
-//     (req, res) => {
-//         console.log('in quote .get with /:quotesId');
-//         res.render('quotes/show', res.locals.quoteData);
-//     }
-// );
+router.get('/edit/:id', 
+		auth.restrict, 
+    Quote.findById,
+    (req, res) => {
+        console.log('in quote .get with /:quotesId');
+
+        res.render('quotes/edit', {quote: res.locals.quoteData});
+    }
+);
 
 //show quotes 
 
@@ -73,11 +75,13 @@ router.get('/show',
 /* Api Routes */
 
 // Add a quote to your database with router.post
-router.post('/',	auth.restrict, Quote.create,
+router.post('/',	
+	auth.restrict, 
+	Quote.create,
     (req, res) => {
         console.log('trying to add new quote');
         console.log(res.locals.newQuoteData);
-        res.render('quotes/show' ,res.locals.newQuoteData);
+        res.render('quotes/show', res.locals.newQuoteData);
     }
 
 );
@@ -85,10 +89,10 @@ router.post('/',	auth.restrict, Quote.create,
 
 // edit a quote in your database with router.put
 
-router.put('/:id',
+router.put('/:id', auth.restrict, 
   Quote.update,
   (req, res) => {
-    res.render('quotes/show', res.locals.editedPokemonData);
+    res.json(res.locals.editedQuoteData);
   }
 );
 

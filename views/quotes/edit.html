@@ -4,28 +4,33 @@
 	<meta charset="UTF-8">
 	<script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
-	<title>Document</title>
+	<title>Quotation Station</title>
 </head>
 <body>
-	<h5> Edit {{ quote }} </h5>
-
-    <form class="edit-quote-form" action ="/quotes/show" method = "post">
+	{{#quote}}
+	<h5> Edit {{{ quote }}} - {{author}} </h5>
+	
+    <form class="edit-quote-form" action ="/quotes/show" method = "put">
       <label>Quote:</label>
-      <input id="quote-change-input" value={{ quote }} >
+      <textarea id="quote-change-input" value={{ quote }} >
+				{{quote}}
+      	</textarea> 
       <br />
 
       <label>Quote Author:</label>
-      <textarea id="quote-changeauthor-input">
-        {{ quoteAuthor }}
-      </textarea>
+      <textarea id="quote-changeauthor-input" value = {{ author }}>
+      	{{author}}
+       </textarea>
+      	
       <br />
 
-  
+  			{{/quote}}
 
       <input type="hidden" id="change-id-input" value={{ id }} >
-			<input type="hidden" class="quote-changeurl-input" value={{ quoteLink }} />
-			<input type="hidden" class="quote-changeuser_id-input" value = {{ user_id }}>
+			<input type="hidden" id="quote-changeurl-input" value={{ quoteLink }} />
+			<input type="hidden" id="quote-changeuser_id-input" value = {{ user_id }}>
       <button type="submit">Submit</button>
+	<a href="/quotes/show">Go Back</a>
     </form>
 </body>
 </html>

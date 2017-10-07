@@ -32,17 +32,16 @@ Quote.findAll = (req, res, next) => {
 };
 
 
-// Quote.findById = (req, res, next) => {
-//     // numericParam is a helper function _we_ defined at the top of the file!
-//     const user_id = req.user.id;
-//     const id = req.params.id;
-//     db.one(
-//         'SELECT * FROM quotes WHERE id = $1 AND user_id = $2', [id, user_id] // use the id here
-//     ).then((quoteData) => {
-//         res.locals.quoteData = quoteData;
-//         next();
-//     });
-// };
+Quote.findById = (req, res, next) => {
+    const user_id = req.user.id;
+    const id = req.params.id;
+    db.one(
+        'SELECT * FROM quotes WHERE id = $1 AND user_id = $2', [id, user_id] // use the id here
+    ).then((quoteData) => {
+        res.locals.quoteData = quoteData;
+        next();
+    });
+};
 
 Quote.create = (req, res, next) => {
         const quote = req.body.quote;
@@ -68,7 +67,7 @@ Quote.update = (req, res, next) => {
         const link = req.body.link;
         const user_id = req.user.id;
         console.log(`user_id inside quote.create: ${user_id}`);
-        db.one('UPDATE quotes SET quote = $1, author = $2, link = $3, user_id = $4 WHERE id = $5 returning id', [quote, author, link, user_id, id]
+        db.none('UPDATE quotes SET quote = $1, author = $2, link = $3, user_id = $4 WHERE id = $5 returning id', [quote, author, link, user_id, id]
         ).then((editedQuoteData) => {
             console.log('returned editedQuoteData: ', editedQuoteData);
             res.locals.editedQuoteData = editedQuoteData;

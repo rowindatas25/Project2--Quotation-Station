@@ -13,10 +13,13 @@
 	
 		<!-- {{{quoteText}}} - {{{quoteAuthor}}} -->
     {{#quote}}
-    <h2> {{{quote}}} - {{{author}}} </h2>
+    <h5> {{{quote}}} - {{{author}}} </h5>
+    <a href ="/quotes/edit/{{id}}">Edit Quote</a>
+    <br>
+    <a href = "">Delete Quote</a>
 		{{/quote}}
 
-    <!-- <a href="/quotes/{{  }}/edit">Edit Quote</a> -->
+    <!-- <a href="/quotes/{{ id }}/edit">Edit Quote</a> -->
     <!-- <input class="delete-quote" data-id={{ id }}><button>Delete this quote? Are you sure?</button> -->
 </body>
 </html>
