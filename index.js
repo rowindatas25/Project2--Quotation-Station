@@ -37,7 +37,7 @@ app.use(cookieParser());
 app.get('/', (req, res) => {
   res.render('index');
 })
-app.use('/quote', require('./controllers/quotes-controller'));
+app.use('/quotes', require('./controllers/quotes-controller'));
 app.use('/users', usersController);
 
 app.use(logger('dev'));

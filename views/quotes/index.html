@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
 	<title>Quotes Page</title>
 </head>
 <body>
-	<h1>Quotes</h1>
+	<div id="container">
+	<h1>Select Your Favorite Quote</h1>
+	<h3>Change quotes by refreshing the page.</h3>
 
+	<div id="quote">"{{ quote }}"<br>&mdash;
+	{{ quoteAuthor }}</div>
+
+	
+    <a href="/quotes/show"><small>Save Quote</small></a>
+    <a href="/quotes/new"><small>Add Quote</small></a>
+    <a href="/quotes/edit"><small>Edit Quote</small></a> 
+  </div>
 </body>
 </html>

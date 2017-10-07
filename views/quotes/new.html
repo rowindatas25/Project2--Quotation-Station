@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+	<title>Quotation Station</title>
+</head>
+<body>
+	<h5> Add New Quote </h5>
+			
+    <form class="new-quote-form" action="/quotes/new" method="post">
+      <label>Quote:</label>
+      <input class="quote-input" value={{ quote }} >
+      <br />
+
+      <label>Quote Author:</label>
+      <input class="quote-author-input" value= {{ quoteAuthor }} >
+        
+      </textarea>
+      <br />
+
+      <input type="hidden" class="quote-url-input" value={{ quoteLink }} />
+			<input type="hidden" class="quote-user_id-input" value = {{ user_id }}>
+      <input type="submit">
+      <a href="./index">Go back</a>
+    	</form>
+    
+</body>
+</html>

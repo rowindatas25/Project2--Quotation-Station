@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<h5> Edit {{ quote }} </h5>
+
+    <form class="edit-quote-form" action ="/quotes/show" method = "post">
+      <label>Quote:</label>
+      <input id="quote-change-input" value={{ quote }} >
+      <br />
+
+      <label>Quote Author:</label>
+      <textarea id="quote-changeauthor-input">
+        {{ quoteAuthor }}
+      </textarea>
+      <br />
+
+  
+
+      <input type="hidden" id="change-id-input" value={{ id }} >
+			<input type="hidden" class="quote-changeurl-input" value={{ quoteLink }} />
+			<input type="hidden" class="quote-changeuser_id-input" value = {{ user_id }}>
+      <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
