@@ -99,6 +99,13 @@ router.put('/:id', auth.restrict,
 
 // remove a quote from database with router.delete
 
+router.delete('/:id',
+		auth.restrict,
+    Quote.destroy,
+    (req, res) => {
+        
+        res.send('deleted');
+    });
 
 
 

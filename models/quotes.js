@@ -67,7 +67,7 @@ Quote.update = (req, res, next) => {
         const link = req.body.link;
         const user_id = req.user.id;
         console.log(`user_id inside quote.create: ${user_id}`);
-        db.none('UPDATE quotes SET quote = $1, author = $2, link = $3, user_id = $4 WHERE id = $5 returning id', [quote, author, link, user_id, id]
+        db.one('UPDATE quotes SET quote = $1, author = $2, link = $3, user_id = $4 WHERE id = $5 returning id', [quote, author, link, user_id, id]
         ).then((editedQuoteData) => {
             console.log('returned editedQuoteData: ', editedQuoteData);
             res.locals.editedQuoteData = editedQuoteData;
@@ -77,6 +77,17 @@ Quote.update = (req, res, next) => {
 }
 
 
+Quote.destroy = (req, res, next) => {
+    const id = req.params.id;
+    db.none(
+        'DELETE FROM quotes WHERE id = $1', [id]
+    ).then(() => {
+        // res.locals.destroyedQuoteData = destroyedQuoteData;
+        next();
+    }).catch(err => {
+        console.log(`Error deleting quotes: ${err}`);
+    })
+};
 
 
 

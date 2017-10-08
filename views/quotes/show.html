@@ -10,13 +10,15 @@
 <body>
 	<a href="/quotes/index">Back to quotes</a>
     <hr />
-	
+		
 		<!-- {{{quoteText}}} - {{{quoteAuthor}}} -->
     {{#quote}}
+    <div class = 'quote-container' data-id= "{{user_id}}">
     <h5> {{{quote}}} - {{{author}}} </h5>
     <a href ="/quotes/edit/{{id}}">Edit Quote</a>
     <br>
-    <a href = "">Delete Quote</a>
+    <a href = "" class = "delete" data-id= "{{id}}">Delete Quote</a>
+		</div>
 		{{/quote}}
 
     <!-- <a href="/quotes/{{ id }}/edit">Edit Quote</a> -->

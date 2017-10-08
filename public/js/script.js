@@ -87,6 +87,30 @@ $(document).ready(() => {
     }); // ends ajax method
   }); // ends submit function for edit quote form
 
+   
+    const deleteQuote = (id) => {
+      $.ajax({
+        url: `/quotes/${id}`,
+        type: 'DELETE',
+        success: (data) => {
+          window.location.reload();
+          $(`#quote-container[data-id]=${id}`).remove();
+        },
+        error: (err) => {
+          console.log(err);
+        }
+      })
+    }
+
+
+
+   $('.delete').on('click', e => {
+      const id = $(e.target).attr('data-id');
+       console.log(id);
+      deleteQuote(id);
+     
+     });
+ 
 }); // ends document.ready
 
 
