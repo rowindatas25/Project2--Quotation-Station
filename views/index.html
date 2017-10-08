@@ -1,22 +1,27 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    
     <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
   </head>
-  <body>
+  <body class= "homepage">
     <div>
-      <h1 class="text-center">Quotation Station</h1>
-      <h2>“In quoting others, we cite ourselves.” <br>
+      <div class="image"></div>​
+    <!--   <img src="QuotationStationLogo.png"> -->
+<!--       <h1 class="text-center">Quotation Station</h1> -->
+      <h2 class="quote">“In quoting others, we cite ourselves.” <br>
 ― Julio Cortázar</h2>
       <form action="/users/login" method="post">
         <input placeholder="username" name="user[email]" type="text"/>
         <input placeholder="password" name="user[password]" type="password"/>
         <input type="submit" value="Login">
+       <!--  <input type ="submit" value= "Sign Up"> -->
       </form>
 
       <div class="text-center">
-        <a href="/users/new"><small>Sign Up</small></a>
+        <a href="/users/new" class = "signup">Sign Up</a>
       </div>
     </div>
   </body>

@@ -3,15 +3,19 @@
 <head>
 	<script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+
 	<title>Quotes Page</title>
 </head>
-<body>
+<body class = "pickquotepage">
+	<div class="image"></div>​
 	<div id="container">
-	<h1>Select Your Favorite Quote</h1>
+
+	<h2>Select Your Favorite Quote</h2>
 	<h3>Change quotes by refreshing the page.</h3>
 
-	<div id="quote">"{{ quote }}"</div><br>&mdash;
-	<div id = "quote-author">{{ quoteAuthor }}</div><br>
+	<div id="quote">"{{ quote }}"</div><br>&mdash;<div id = "quote-author">{{ quoteAuthor }}</div><br>
 
 
 	<input type="hidden" id="quote-url-input" value={{quoteLink}} >

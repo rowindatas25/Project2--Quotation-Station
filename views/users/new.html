@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="/main.css">
+  
   <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
 </head>
-<body>
+<body class ="userpage">
   <div>
-    <h1>Quotation Station</h1>
-    <h2>Please create an account</h2>
-    <form action="/users" method="POST">
+   <div class="image"></div>​
+    <h2>Create Your Account</h2>
+    <form action="/users" method="POST" class = "userform">
 
       <label for="email">Email</label><br>
       <input id="email" type="text" name="user[email]" placeholder="john.doe@example.com"><br>

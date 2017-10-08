@@ -70,7 +70,7 @@ $(document).ready(() => {
          
 
     // create new object to send form data in
-    const editedQuoteData = {quote: quote, author: author, link: link, user_id: user_id};
+    const editedQuoteData = {quote: quote, author: author, link: link, user_id: user_id, id: id};
 
     // console.log(quoteData);
     // send ajax request to edit  quotes

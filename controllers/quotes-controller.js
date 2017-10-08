@@ -89,10 +89,10 @@ router.post('/',
 
 // edit a quote in your database with router.put
 
-router.put('/:id', auth.restrict, 
+router.put('/edit/:id', auth.restrict, 
   Quote.update,
   (req, res) => {
-    res.json(res.locals.editedQuoteData);
+    res.render('quotes/show', res.locals.editedQuoteData);
   }
 );
 
