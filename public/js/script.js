@@ -66,7 +66,7 @@ $(document).ready(() => {
           author = $('#quote-changeauthor-input').val(),
           link = $('#quote-changeurl-input').val(),
           user_id = $('#quote-changeuser_id-input').val(),
-          id = $('#change-id-input');
+          id = $('#change-id-input').val();
          
 
     // create new object to send form data in
