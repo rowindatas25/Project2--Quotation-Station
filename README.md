@@ -14,16 +14,16 @@ API- I used an API key from forismatic and created an axios call to render each 
 
 
 
-Wireframes
+# Wireframes
 
 
 
-User Stories 
+# User Stories 
 As a user I want my app to be able to provide a nice user experience where they can generate random quotes and save/add them to their favorites. Anyone will be able to view these quotes and be inspired by them, whenever they choose.
 
 
 
-The approach taken
+# The approach taken
 
 My approach started with the idea of a random quote generator and I knew I wanted a save, add and edit page. When creating the wireframes, I knew I had to map out each page and in the end I decided to make the show/save page the same. It was a question of being able to link those pages together correctly. 
 
@@ -38,7 +38,7 @@ I was able to follow similar steps to complete show, edit and delete functions o
 Once that was comlpete, I styled the app.
 
 
-Installation instructions (if needed)
+# Installation instructions (if needed)
 
 Just simply sign up!
 
@@ -46,17 +46,14 @@ Just simply sign up!
 
 
 
-Unsolved problems
+# Unsolved problems
 
 When a quote is edited, it goes down to the bottom of the show page rather than where it originally was before. 
 
 The API key sometimes would send a bad string so the quote and quote author wouldn't print on the screen.
 
-Sometimes the API key would send in a quote with a hash and other times it wouldn't so some quotes would have two dashes instead of one.
 
-
-
-Any other useful information about your app
+# Any other useful information about your app
 
 
 
