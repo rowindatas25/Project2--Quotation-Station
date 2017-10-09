@@ -9,9 +9,24 @@
 	background-color: #8d9db6;
 }
 
+.showpage {
+	text-align: center;
+	background-color: #454140;
+}
+
 .pickquotepage{
 	text-align: center;
 	background-color: #87bdd8;
+}
+
+.newquotepage{
+	text-align: center;
+	background-color: #b7d7e8;
+}
+
+.editquotepage{
+	text-align: center;
+	background-color: #cfe0e8;
 }
 
 #container {
@@ -22,10 +37,26 @@
 
 }
 
+#container2 {
+	border: 5px solid #454140;
+	width: 75%;
+	display: block;
+	margin-top: 50px;
+}
+
+#container3 {
+	border: 5px solid #454140;
+	width: 95%;
+	display: block;
+	margin-top: 50px;
+}
+
 label {
 	width: 25%;
   border: none;
   margin: 0 auto;
+  font-size: 17px;
+  margin
   
 }
 
@@ -37,13 +68,43 @@ margin-top: 100px;
 
 }
 
+
+
 .userform{
-	display: block;
+display: block;
 margin: 0 auto; 
 text-align: center;
 margin-bottom: 100px;
 font-family: 'EB Garamond', serif;
 }
+
+.new-quote-form{
+display: block;
+margin: 0 auto; 
+text-align: center;
+margin-bottom: 100px;
+font-family: 'EB Garamond', serif;
+}
+
+.edit-quote-form{
+display: block;
+margin: 0 auto; 
+text-align: center;
+margin-bottom: 100px;
+font-family: 'EB Garamond', serif;
+}
+
+#quote-change-input {
+	width: 50%;
+	text-align: center;
+}
+
+#quote-changeauthor-input {
+	text-align: center;
+}
+
+
+
 
 div.image{
 	content:url('/css/QuotationStationLogo.png');
@@ -51,6 +112,7 @@ div.image{
 	margin: 0 auto;
 	background-color: #8d9db6;
 	border: 3px solid #454140;
+	margin-top: 30px;
 }
 
 div {
@@ -85,12 +147,14 @@ color: #667292;
 font-family: 'Merriweather Sans', sans-serif;
 font-size: 20px;
 color: #daebe8;
+text-shadow: 0 3px 3px #222;
 }
 
 #quote-author {
 	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 20px;
 	color: #daebe8;
+	text-shadow: 0 3px 3px #222;
 }
 
 h2 {
@@ -98,6 +162,17 @@ h2 {
 	font-size: 35px;
 	text-shadow: 0 3px 3px #222;
 	color: #f1e3dd;
+	text-align: center;
+}
+
+.addquote {
+	font-size: 35px;
+}
+
+h2.editquote {
+	color: #fbefcc;	
+	font-family: 'EB Garamond', serif;
+	font-size: 40px;
 }
 
 h3 {
@@ -105,6 +180,13 @@ h3 {
 	font-size: 25px;
 	text-shadow: 0 3px 3px #222;
 	color: #f1e3dd;
+}
+
+h4 {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 20px;
+	color: #daebe8;
+	text-shadow: 0 3px 3px #222;
 }
 
 input {
@@ -117,13 +199,121 @@ input {
 
 input[type="submit"] {
   width: 25%;
-  border: none;
+  border: .5px solid black;
   background-color: #f1e3dd;
   margin: 0 auto;
+  font-family: 'EB Garamond', serif;
+  color: #454140;
+  font-size: 20px;
 }
 
+input[type="password"] {
+		
+}
+
+button.edit-button {
+	width: 15%;
+  border: .5px solid black;
+  background-color: #454140;
+  margin: 0 auto;
+  font-family: 'EB Garamond', serif;
+	font-size: 17px;
+	
+}
+
+button.delete-button {
+	width: 15%;
+  border: .5px solid black;
+  background-color: #454140;
+  margin: 0 auto;
+  font-family: 'EB Garamond', serif;
+  font-size: 17px;
+}
+
+button.back-button {
+	width: 15%;
+  border: .5px solid black;
+  background-color: #454140;
+  margin: 0 auto;
+  font-family: 'EB Garamond', serif;
+  font-size: 17px;
+
+}
+
+button.goback-btn {
+	width: 25%;
+  border: .5px solid black;
+  background-color: #f1e3dd;
+  margin: 0 auto;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+
+
+button.save-button {
+	width: 20%;
+  border: 1px solid black;
+  background-color: #87bdd8;
+  margin: 0 auto;
+  font-family: 'EB Garamond', serif;
+  font-size: 17px;
+  color: #667292;
+}
+
+#add-quote {
+	 color: black;
+	 font-family: 'EB Garamond', serif;
+	 font-size: 17px;
+}
+
+#new-quote {
+	color: black;
+	font-family: 'EB Garamond', serif;
+	font-size: 17px;
+}
+
+#show-quote {
+	color: black;
+	font-family: 'EB Garamond', serif;
+	font-size: 17px;
+}
+
+button.add-button {
+	width: 20%;
+  border: 1px solid black;
+  background-color: #87bdd8;
+  margin: 0 auto;
+  font-family: 'EB Garamond', serif;
+  font-size: 17px;
+  color: #667292;
+}
+
+button.show-button {
+	width: 20%;
+  border: 1px solid black;
+  background-color: #87bdd8;
+  margin: 0 auto;
+  font-family: 'EB Garamond', serif;
+  font-size: 17px;
+  color: #667292;
+}
+
+button[type="submit"] {
+	width: 25%;
+  border: .5px solid black;
+  background-color: #f1e3dd;
+  margin: 0 auto;
+  font-family: 'EB Garamond', serif;
+  color: #454140;
+  font-size: 20px;
+}
+
+
+
 a.signup{
-	width: 100%;
+	
  /* border: 1px solid black;*/
   background-color: #f1e3dd;
 	font-size: 15px;
@@ -132,8 +322,61 @@ a.signup{
 	outline: none;
   text-decoration: none;
   padding: 2px 1px 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
 }
+
+a.goback {
+	background-color: #f1e3dd;
+	font-size: 15px;
+	color: #454140;
+	margin-bottom: 100px;
+	outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+}
+
 
 .text-center {
   text-align: center;
+  width: 23%;
+  background-color: #f1e3dd;
+	border: .5px solid black;
+	padding: 10px;
+}
+
+.text-center2{
+	text-align: center;
+  width: 23%;
+  background-color: #f1e3dd;
+	border: .5px solid black;
+	padding: 10px;
+	margin-bottom: 40px;
+}
+
+.delete {
+	text-align: center;
+	font-size: 17px;
+	color: #f1e3dd;
+}
+
+.back{
+	text-align: center;
+	font-size: 17px;
+	color: #f1e3dd;
+}
+
+.edit {
+		text-align: center;
+  	font-size: 17px;
+  	color: #f1e3dd;
+}
+
+a.back1 {
+	text-align: center;
+  	font-size: 17px;
+  	color: #454140;
+
 }

@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<script type="text/javascript" src="/js/jquery.js"></script>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-	<title>Quotation Station</title>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    <title>Quotation Station</title>
 </head>
-<body>
-	<h5> Add New Quote </h5>
-			
-    <form class="new-quote-form" action="/quotes/new" method="post">
-      <label>Quote:</label>
-      <input class="quote-input" value={{ quote }} >
-      <br />
 
-      <label>Quote Author:</label>
-      <input class="quote-author-input" value= {{ quoteAuthor }} >
-        
-      </textarea>
-      <br />
-
-      <input type="hidden" class="quote-url-input" value={{ quoteLink }} />
-			<input type="hidden" class="quote-user_id-input" value = {{ user_id }}>
-      <input type="submit">
-      <a href="./index">Go back</a>
-    	</form>
-    
+<body class="newquotepage">
+    <div class="image"></div>​
+    <div id="container2">
+        <h2 class="addquote">  Add New Quote </h2>
+        <form class="new-quote-form" action="/quotes/new" method="post">
+            <label>Quote:</label>
+            <input class="quote-input" value={{ quote }}>
+            <br />
+            <label>Quote Author:</label>
+            <input class="quote-author-input" value={{ quoteAuthor }}>
+            <br />
+            <input type="hidden" class="quote-url-input" value={{ quoteLink }} />
+            <input type="hidden" class="quote-user_id-input" value={ { user_id }}>
+            <input type="submit">
+            <button class ="goback-btn"><a href="./index" class ="back1">Go back</a></button>
+        </form>
+    </div>
 </body>
+
 </html>

@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
-
-	<title>Quotes Page</title>
+    <title>Quotes Page</title>
 </head>
-<body class = "pickquotepage">
-	<div class="image"></div>​
-	<div id="container">
 
-	<h2>Select Your Favorite Quote</h2>
-	<h3>Change quotes by refreshing the page.</h3>
-
-	<div id="quote">"{{ quote }}"</div><br>&mdash;<div id = "quote-author">{{ quoteAuthor }}</div><br>
-
-
-	<input type="hidden" id="quote-url-input" value={{quoteLink}} >
-	<input type="hidden" id="quote-user_id-input" value={{user_id}}>
-	
-    <a href="" id = "add-quote">Save This Quote</a>
-    <a href="/quotes/new">Add Quote</a>
-    <a href = "/quotes/show">Show All Quotes</a>
-  </div>
+<body class="pickquotepage">
+    <div class="image"></div>​
+    <div id="container">
+        <h2 class = "fav-quote">Select Your Favorite Quote</h2>
+        <h3>Change quotes by refreshing the page.</h3>
+        <div id="quote">"{{ quote }}"</div>
+        <br>&mdash;
+        <div id="quote-author">{{ quoteAuthor }}</div>
+        <br>
+        <input type="hidden" id="quote-url-input" value={{quoteLink}}>
+        <input type="hidden" id="quote-user_id-input" value={{user_id}}>
+       <button class = "save-button"><a href="" id="add-quote">Save This Quote</a></button>
+        <button class= "add-button"><a href="/quotes/new" id = "new-quote">Add Quote</a></button>
+        <button class ="show-button"><a href="/quotes/show" id = "show-quote">Show All Quotes</a></button>
+    </div>
 </body>
+
 </html>
