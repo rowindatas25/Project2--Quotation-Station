@@ -211,7 +211,7 @@ input[type="submit"] {
 }
 
 input[type="password"] {
-		
+		width: 20%;
 }
 
 button.edit-button {
@@ -314,6 +314,9 @@ button[type="submit"] {
 }
 
 
+input[type = "submit"] {
+	width: 20%;
+}
 
 a.signup{
 	
@@ -344,7 +347,7 @@ a.goback {
 
 .text-center {
   text-align: center;
-  width: 23.5%;
+  width: 18.5%;
   background-color: #f1e3dd;
 	border: .5px solid black;
 	padding: 10px;
@@ -384,3 +387,12 @@ a.back1 {
   	color: #454140;
 
 }
+
+
+input[type = "text"] {
+	width: 20%;
+}
+
+
+
+
