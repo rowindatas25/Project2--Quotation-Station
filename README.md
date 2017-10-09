@@ -51,5 +51,25 @@ When a quote is edited, it goes down to the bottom of the show page rather than 
 
 The API key sometimes would send a bad string so the quote and quote author wouldn't print on the screen.
 
+<<<<<<< HEAD
+=======
+
+# Any other useful information about your app
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> ed36557ceeb3a8f01a5e05b34a3b147f62fc0184
 
 # Any other useful information about your app
