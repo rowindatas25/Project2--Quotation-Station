@@ -16,7 +16,7 @@ API- I used an API key from forismatic and created an axios call to render each 
 
 # Wireframes
 
-
+https://git.generalassemb.ly/storage/user/7642/files/1a128ba2-a878-11e7-87fe-dfc0c7902953
 
 # User Stories 
 As a user I want my app to be able to provide a nice user experience where they can generate random quotes and save/add them to their favorites. Anyone will be able to view these quotes and be inspired by them, whenever they choose.
