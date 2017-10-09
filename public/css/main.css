@@ -39,16 +39,17 @@
 
 #container2 {
 	border: 5px solid #454140;
-	width: 75%;
+	width: 50%;
 	display: block;
 	margin-top: 50px;
 }
 
 #container3 {
 	border: 5px solid #454140;
-	width: 95%;
+	width: 85%;
+	height: 40%;
 	display: block;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 label {
@@ -97,10 +98,12 @@ font-family: 'EB Garamond', serif;
 #quote-change-input {
 	width: 50%;
 	text-align: center;
+	font-family: 'Merriweather Sans', sans-serif;
 }
 
 #quote-changeauthor-input {
 	text-align: center;
+	font-family: 'Merriweather Sans', sans-serif;
 }
 
 
@@ -153,7 +156,7 @@ text-shadow: 0 3px 3px #222;
 #quote-author {
 	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 20px;
-	color: #daebe8;
+	color: #fbefcc;
 	text-shadow: 0 3px 3px #222;
 }
 
@@ -255,7 +258,7 @@ button.goback-btn {
 button.save-button {
 	width: 20%;
   border: 1px solid black;
-  background-color: #87bdd8;
+  background-color: #ffcc5c;
   margin: 0 auto;
   font-family: 'EB Garamond', serif;
   font-size: 17px;
@@ -283,7 +286,7 @@ button.save-button {
 button.add-button {
 	width: 20%;
   border: 1px solid black;
-  background-color: #87bdd8;
+  background-color: #ffcc5c;
   margin: 0 auto;
   font-family: 'EB Garamond', serif;
   font-size: 17px;
@@ -293,7 +296,7 @@ button.add-button {
 button.show-button {
 	width: 20%;
   border: 1px solid black;
-  background-color: #87bdd8;
+  background-color: #ffcc5c;
   margin: 0 auto;
   font-family: 'EB Garamond', serif;
   font-size: 17px;
@@ -341,7 +344,7 @@ a.goback {
 
 .text-center {
   text-align: center;
-  width: 23%;
+  width: 23.5%;
   background-color: #f1e3dd;
 	border: .5px solid black;
 	padding: 10px;
@@ -349,11 +352,12 @@ a.goback {
 
 .text-center2{
 	text-align: center;
-  width: 23%;
+  width: 20%;
   background-color: #f1e3dd;
 	border: .5px solid black;
-	padding: 10px;
-	margin-bottom: 40px;
+	padding: 5px;
+	margin: 0 auto;
+	margin-bottom: 50px;
 }
 
 .delete {

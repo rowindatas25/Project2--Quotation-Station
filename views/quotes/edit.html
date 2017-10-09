@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<script type="text/javascript" src="/js/jquery.js"></script>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/js/jquery.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
-	<title>Quotation Station</title>
+     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+    <title>Quotation Station</title>
 </head>
-<body class ="editquotepage">
-	<div class="image"></div>​
-	<div id = "container3">
-	{{#quote}}
-	<h2 class ="editquote"> Edit: {{{ quote }}} - {{author}} </h2>
-	
-    <form class="edit-quote-form" action ="/quotes/show" method = "put">
-      <label>Quote:</label>
-      <input id="quote-change-input" value= "{{ quote }}" >
-				<!-- {{quote}} -->
-      	</input> 
-      <br />
 
-      <label>Quote Author:</label>
-      <input id="quote-changeauthor-input" value = "{{ author }} ">
-      	<!-- {{author}} -->
-       </input>
-      	
-      <br />
-
-  			{{/quote}}
-
-      <input type="hidden" id="change-id-input" value={{quote.id}} >
-			<input type="hidden" id="quote-changeurl-input" value={{quote.link}} />
-			<input type="hidden" id="quote-changeuser_id-input" value = {{quote.user_id}}>
-      <button type="submit">Submit</button><br>
-    </form>
-    <div class="text-center2">
-	<a href="/quotes/show" class = "goback">Go Back</a>
-</div>
-  </div>
+<body class="editquotepage">
+    <div class="image"></div>​
+    <div id="container3">
+        {{#quote}}
+        <h2 class="editquote"> Edit: {{{ quote }}} - {{author}} </h2>
+        <form class="edit-quote-form" action="/quotes/show" method="put">
+            <label>Quote:</label>
+            <input id="quote-change-input" value="{{ quote }}">
+            <!-- {{quote}} -->
+            </input>
+            <br />
+            <label>Quote Author:</label>
+            <input id="quote-changeauthor-input" value="{{ author }} ">
+            <!-- {{author}} -->
+            </input>
+            <br /> {{/quote}}
+            <input type="hidden" id="change-id-input" value={{quote.id}}>
+            <input type="hidden" id="quote-changeurl-input" value={{quote.link}} />
+            <input type="hidden" id="quote-changeuser_id-input" value={ {quote.user_id}}>
+            <button type="submit">Submit</button>
+            <br>
+        </form>
+        <div class="text-center2">
+            <a href="/quotes/show" class="goback">Go Back</a>
+        </div>
+    </div>
 </body>
+
 </html>
