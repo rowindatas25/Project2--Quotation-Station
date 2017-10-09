@@ -24,9 +24,9 @@ app.use(express.static(__dirname + '/public'));
 
 // Important: mount express middleware BEFORE passport middleware
 app.use(session({
-  secret: 'keyboard cat',
-  resave: true,
-  saveUninitialized: true
+    secret: 'keyboard cat',
+    resave: true,
+    saveUninitialized: true
 }));
 
 const auth = require('./services/auth.js');
@@ -35,7 +35,7 @@ app.use(auth.passportSession);
 app.use(cookieParser());
 
 app.get('/', (req, res) => {
-  res.render('index');
+    res.render('index');
 })
 app.use('/quotes', require('./controllers/quotes-controller'));
 app.use('/users', usersController);
@@ -43,6 +43,5 @@ app.use('/users', usersController);
 app.use(logger('dev'));
 
 app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
+    console.log(`Listening on port ${port}`);
 });
-
