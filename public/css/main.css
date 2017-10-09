@@ -2,343 +2,358 @@
 
 .homepage {
 
-  text-align: center;
-  background-color: #667292;
+    text-align: center;
+    background-color: #667292;
 }
 
-div.image{
-	content:url('/css/QuotationStationLogo.png');
-	display: block;
-	margin: 0 auto;
-	background-color: #8d9db6;
-	border: 3px solid #454140;
-	margin-top: 30px;
+div.image {
+    content: url('/css/QuotationStationLogo.png');
+    display: block;
+    margin: 0 auto;
+    background-color: #8d9db6;
+    border: 3px solid #454140;
+    margin-top: 30px;
 }
 
 .quote {
-  position: absolute;
-  font-size: 20px;
-  text-align: center;
-  text-shadow: 0 3px 3px #222;
-  width: 100%;
-  font-family: 'EB Garamond', serif;
-  display: block;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0 3px 3px #222;
+    width: 100%;
+    font-family: 'EB Garamond', serif;
+    display: block;
 }
 
 input[type="submit"] {
-  width: 25%;
-  border: .5px solid black;
-  background-color: #f1e3dd;
-  margin: 0 auto;
-  font-family: 'EB Garamond', serif;
-  color: #454140;
-  font-size: 20px;
+    width: 25%;
+    border: .5px solid black;
+    background-color: #f1e3dd;
+    margin: 0 auto;
+    font-family: 'EB Garamond', serif;
+    color: #454140;
+    font-size: 20px;
 }
 
 input[type="password"] {
-		width: 20%;
+    width: 20%;
 }
 
 
 .text-center {
-  text-align: center;
-  width: 18.5%;
-  background-color: #f1e3dd;
-	border: .5px solid black;
-	padding: 10px;
+    text-align: center;
+    width: 18.5%;
+    background-color: #f1e3dd;
+    border: .5px solid black;
+    padding: 10px;
 }
 
 form {
-display: block;
-margin: 0 auto; 
-text-align: center;
-margin-top: 100px;
-
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
 }
 
-a.signup{
-	
+a.signup {
 
-  background-color: #f1e3dd;
-	font-size: 15px;
-	color: #454140;
-	margin-bottom: 100px;
-	outline: none;
-  text-decoration: none;
-  padding: 2px 1px 0;
-  font-family: 'EB Garamond', serif;
-  font-size: 20px;
+
+    background-color: #f1e3dd;
+    font-size: 15px;
+    color: #454140;
+    margin-bottom: 100px;
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
 }
 
 div {
-	display: block;
-	margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
+
 
 
 /*End of css for user login page*/
 
+
 /*Start of css for user signup page*/
 
 .userpage {
-	text-align: center;
-	background-color: #8d9db6;
+    text-align: center;
+    background-color: #8d9db6;
 }
 
 label {
-	width: 25%;
-  border: none;
-  margin: 0 auto;
-  font-size: 17px;
-  margin
-  
+    width: 25%;
+    border: none;
+    margin: 0 auto;
+    font-size: 17px;
+    margin
 }
 
 input {
-  display: block;
-  padding: 10px;
-  margin-bottom: 10px;
-  width: 25%;
-  margin: 0 auto;
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 25%;
+    margin: 0 auto;
 }
 
-input[type = "submit"] {
-	width: 20%;
+input[type="submit"] {
+    width: 20%;
 }
 
-input[type = "text"] {
-	width: 20%;
+input[type="text"] {
+    width: 20%;
 }
 
-.userform{
-display: block;
-margin: 0 auto; 
-text-align: center;
-margin-bottom: 100px;
-font-family: 'EB Garamond', serif;
+.userform {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: 'EB Garamond', serif;
 }
+
 
 
 /*End of css for user signup page*/
 
+
 /*Start of css for show all quotes page*/
 
 .showpage {
-	text-align: center;
-	background-color: #454140;
+    text-align: center;
+    background-color: #454140;
 }
 
 h2 {
-	font-family: 'EB Garamond', serif;
-	font-size: 35px;
-	text-shadow: 0 3px 3px #222;
-	color: #f1e3dd;
-	text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 35px;
+    text-shadow: 0 3px 3px #222;
+    color: #f1e3dd;
+    text-align: center;
 }
 
 
 h4 {
-	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 20px;
-	color: #daebe8;
-	text-shadow: 0 3px 3px #222;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    color: #daebe8;
+    text-shadow: 0 3px 3px #222;
 }
 
 button.edit-button {
-	width: 15%;
-  border: .5px solid black;
-  background-color: #454140;
-  margin: 0 auto;
-  font-family: 'EB Garamond', serif;
-	font-size: 17px;
-	
+    width: 15%;
+    border: .5px solid black;
+    background-color: #454140;
+    margin: 0 auto;
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
 }
 
 button.delete-button {
-	width: 15%;
-  border: .5px solid black;
-  background-color: #454140;
-  margin: 0 auto;
-  font-family: 'EB Garamond', serif;
-  font-size: 17px;
+    width: 15%;
+    border: .5px solid black;
+    background-color: #454140;
+    margin: 0 auto;
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
+}
 
-  }
-
-  button.back-button {
-	width: 15%;
-  border: .5px solid black;
-  background-color: #454140;
-  margin: 0 auto;
-  font-family: 'EB Garamond', serif;
-  font-size: 17px;
+button.back-button {
+    width: 15%;
+    border: .5px solid black;
+    background-color: #454140;
+    margin: 0 auto;
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
+}
+button.logout-button {
+		width: 15%;
+    border: .5px solid black;
+    background-color: #454140;
+    margin: 0 auto;
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
 
 }
 
 .edit {
-		text-align: center;
-  	font-size: 17px;
-  	color: #f1e3dd;
+    text-align: center;
+    font-size: 17px;
+    color: #f1e3dd;
 }
 
-.back{
-	text-align: center;
-	font-size: 17px;
-	color: #f1e3dd;
+.back {
+    text-align: center;
+    font-size: 17px;
+    color: #f1e3dd;
 }
 
 
 .delete {
-	text-align: center;
-	font-size: 17px;
-	color: #f1e3dd;
+    text-align: center;
+    font-size: 17px;
+    color: #f1e3dd;
 }
+
+a.logout{
+		text-align: center;
+    font-size: 17px;
+    color: #f1e3dd;
+}
+
 
 /*End of css for show all quotes page*/
 
 
-
 /*Start of css for add quotes from API to profile page*/
 
-.pickquotepage{
-	text-align: center;
-	background-color: #87bdd8;
+.pickquotepage {
+    text-align: center;
+    background-color: #87bdd8;
 }
 
 #container {
-	border: 5px solid #454140;
-	width: 75%;
-	display: block;
-	margin-top: 50px;
-
+    border: 5px solid #454140;
+    width: 75%;
+    display: block;
+    margin-top: 50px;
 }
 
 #quote {
-font-family: 'Merriweather Sans', sans-serif;
-font-size: 20px;
-color: #daebe8;
-text-shadow: 0 3px 3px #222;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    color: #daebe8;
+    text-shadow: 0 3px 3px #222;
 }
 
 #quote-author {
-	font-family: 'Merriweather Sans', sans-serif;
-	font-size: 20px;
-	color: #fbefcc;
-	text-shadow: 0 3px 3px #222;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    color: #fbefcc;
+    text-shadow: 0 3px 3px #222;
 }
 
 h3 {
-	font-family: 'EB Garamond', serif;
-	font-size: 25px;
-	text-shadow: 0 3px 3px #222;
-	color: #f1e3dd;
+    font-family: 'EB Garamond', serif;
+    font-size: 25px;
+    text-shadow: 0 3px 3px #222;
+    color: #f1e3dd;
 }
 
 button.add-button {
-	width: 20%;
-  border: 1px solid black;
-  background-color: #ffcc5c;
-  margin: 0 auto;
-  font-family: 'EB Garamond', serif;
-  font-size: 17px;
-  color: #667292;
+    width: 20%;
+    border: 1px solid black;
+    background-color: #ffcc5c;
+    margin: 0 auto;
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
+    color: #667292;
 }
 
 button.show-button {
-	width: 20%;
-  border: 1px solid black;
-  background-color: #ffcc5c;
-  margin: 0 auto;
-  font-family: 'EB Garamond', serif;
-  font-size: 17px;
-  color: #667292;
+    width: 20%;
+    border: 1px solid black;
+    background-color: #ffcc5c;
+    margin: 0 auto;
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
+    color: #667292;
 }
 
 button.save-button {
-	width: 20%;
-  border: 1px solid black;
-  background-color: #ffcc5c;
-  margin: 0 auto;
-  font-family: 'EB Garamond', serif;
-  font-size: 17px;
-  color: #667292;
+    width: 20%;
+    border: 1px solid black;
+    background-color: #ffcc5c;
+    margin: 0 auto;
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
+    color: #667292;
 }
 
 #add-quote {
-	 color: black;
-	 font-family: 'EB Garamond', serif;
-	 font-size: 17px;
+    color: black;
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
 }
 
 #new-quote {
-	color: black;
-	font-family: 'EB Garamond', serif;
-	font-size: 17px;
+    color: black;
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
 }
 
 #show-quote {
-	color: black;
-	font-family: 'EB Garamond', serif;
-	font-size: 17px;
+    color: black;
+    font-family: 'EB Garamond', serif;
+    font-size: 17px;
 }
+
 
 
 
 /*End of css for add quotes from API to profile page*/
 
+
 /*Start of css for adding own quotes to own profile page*/
 
-.newquotepage{
-	text-align: center;
-	background-color: #b7d7e8;
+.newquotepage {
+    text-align: center;
+    background-color: #b7d7e8;
 }
 
 #container2 {
-	border: 5px solid #454140;
-	width: 50%;
-	display: block;
-	margin-top: 50px;
+    border: 5px solid #454140;
+    width: 50%;
+    display: block;
+    margin-top: 50px;
 }
 
-.new-quote-form{
-display: block;
-margin: 0 auto; 
-text-align: center;
-margin-bottom: 100px;
-font-family: 'EB Garamond', serif;
+.new-quote-form {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: 'EB Garamond', serif;
 }
 
 .addquote {
-	font-size: 35px;
+    font-size: 35px;
 }
 
 button.goback-btn {
-	width: 25%;
-  border: .5px solid black;
-  background-color: #f1e3dd;
-  margin: 0 auto;
-  font-family: 'EB Garamond', serif;
-  font-size: 20px;
-  margin-top: 20px;
+    width: 25%;
+    border: .5px solid black;
+    background-color: #f1e3dd;
+    margin: 0 auto;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 a.goback {
-	background-color: #f1e3dd;
-	font-size: 15px;
-	color: #454140;
-	margin-bottom: 100px;
-	outline: none;
-  text-decoration: none;
-  padding: 2px 1px 0;
-  font-family: 'EB Garamond', serif;
-  font-size: 20px;
+    background-color: #f1e3dd;
+    font-size: 15px;
+    color: #454140;
+    margin-bottom: 100px;
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
 }
 
 a.back1 {
-	text-align: center;
-  	font-size: 17px;
-  	color: #454140;
-
+    text-align: center;
+    font-size: 17px;
+    color: #454140;
 }
+
 
 
 /*End of css for adding own quotes to own profile page*/
@@ -346,94 +361,63 @@ a.back1 {
 
 /*Start of css for edit quote page*/
 
-.editquotepage{
-	text-align: center;
-	background-color: #cfe0e8;
+.editquotepage {
+    text-align: center;
+    background-color: #cfe0e8;
 }
 
 #container3 {
-	border: 5px solid #454140;
-	width: 85%;
-	height: 40%;
-	display: block;
-	margin-top: 30px;
+    border: 5px solid #454140;
+    width: 85%;
+    height: 40%;
+    display: block;
+    margin-top: 30px;
 }
 
-.edit-quote-form{
-display: block;
-margin: 0 auto; 
-text-align: center;
-margin-bottom: 100px;
-font-family: 'EB Garamond', serif;
+.edit-quote-form {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: 'EB Garamond', serif;
 }
 
 #quote-change-input {
-	width: 50%;
-	text-align: center;
-	font-family: 'Merriweather Sans', sans-serif;
+    width: 50%;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 #quote-changeauthor-input {
-	text-align: center;
-	font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 h2.editquote {
-	color: #fbefcc;	
-	font-family: 'EB Garamond', serif;
-	font-size: 40px;
+    color: #fbefcc;
+    font-family: 'EB Garamond', serif;
+    font-size: 40px;
 }
 
 button[type="submit"] {
-	width: 25%;
-  border: .5px solid black;
-  background-color: #f1e3dd;
-  margin: 0 auto;
-  font-family: 'EB Garamond', serif;
-  color: #454140;
-  font-size: 20px;
+    width: 25%;
+    border: .5px solid black;
+    background-color: #f1e3dd;
+    margin: 0 auto;
+    font-family: 'EB Garamond', serif;
+    color: #454140;
+    font-size: 20px;
 }
 
-.text-center2{
-	text-align: center;
-  width: 20%;
-  background-color: #f1e3dd;
-	border: .5px solid black;
-	padding: 5px;
-	margin: 0 auto;
-	margin-bottom: 50px;
+.text-center2 {
+    text-align: center;
+    width: 20%;
+    background-color: #f1e3dd;
+    border: .5px solid black;
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
+
 
 /*End of css for edit quote page*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
