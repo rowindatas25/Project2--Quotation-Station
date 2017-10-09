@@ -13,20 +13,17 @@
 
 <body class="showpage">
     <h2>Quote Profile</h2>
-    <hr />
-    <!-- {{{quoteText}}} - {{{quoteAuthor}}} -->
-    {{#quote}}
+    <hr /> {{#quote}}
     <div class='quote-container' data-id="{{user_id}}">
         <h4> {{{quote}}} - {{{author}}} </h4>
-        <button class ="edit-button"><a href="/quotes/edit/{{id}}" class ="edit">Edit Quote</a>
-        <br></button>
-        <button class = "delete-button"><a href="" class="delete" data-id="{{id}}">Delete Quote</a></button>
+        <button class="edit-button"><a href="/quotes/edit/{{id}}" class="edit">Edit Quote</a>
+            <br>
+        </button>
+        <button class="delete-button"><a href="" class="delete" data-id="{{id}}">Delete Quote</a></button>
         <hr />
     </div>
     {{/quote}}
-    <button class = "back-button"><a href="/quotes/index" class="back">Back to Quotes</a></button>
-    <!-- <a href="/quotes/{{ id }}/edit">Edit Quote</a> -->
-    <!-- <input class="delete-quote" data-id={{ id }}><button>Delete this quote? Are you sure?</button> -->
+    <button class="back-button"><a href="/quotes/index" class="back">Back to Quotes</a></button>
 </body>
 
 </html>

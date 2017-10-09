@@ -13,17 +13,17 @@
 <body class="pickquotepage">
     <div class="image"></div>​
     <div id="container">
-        <h2 class = "fav-quote">Select Your Favorite Quote</h2>
+        <h2 class="fav-quote">Select Your Favorite Quote</h2>
         <h3>Refresh the Page to See a New Quote</h3>
         <div id="quote">"{{ quote }}"</div>
         <br>
-        <div id="quote-author"> - {{ quoteAuthor }}</div>
+        <div id="quote-author"> {{ quoteAuthor }}</div>
         <br>
         <input type="hidden" id="quote-url-input" value={{quoteLink}}>
         <input type="hidden" id="quote-user_id-input" value={{user_id}}>
-       <button class = "save-button"><a href="" id="add-quote">Save This Quote</a></button>
-        <button class= "add-button"><a href="/quotes/new" id = "new-quote">Add Quote</a></button>
-        <button class ="show-button"><a href="/quotes/show" id = "show-quote">Show All Quotes</a></button>
+        <button class="save-button"><a href="/quotes/show" id="add-quote">Save This Quote</a></button>
+        <button class="add-button"><a href="/quotes/new" id="new-quote">Add Quote</a></button>
+        <button class="show-button"><a href="/quotes/show" id="show-quote">Show All Quotes</a></button>
     </div>
 </body>
 

@@ -7,7 +7,7 @@
     <script type="text/javascript" src="/js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
     <title>Quotation Station</title>
 </head>
 
@@ -15,7 +15,7 @@
     <div class="image"></div>​
     <div id="container3">
         {{#quote}}
-        <h2 class="editquote"> Edit: {{{ quote }}} - {{author}} </h2>
+        <h2 class="editquote"> Edit: {{{ quote }}}  {{author}} </h2>
         <form class="edit-quote-form" action="/quotes/show" method="put">
             <label>Quote:</label>
             <input id="quote-change-input" value="{{ quote }}">

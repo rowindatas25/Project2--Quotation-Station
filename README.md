@@ -52,6 +52,8 @@ When a quote is edited, it goes down to the bottom of the show page rather than 
 
 The API key sometimes would send a bad string so the quote and quote author wouldn't print on the screen.
 
+Sometimes the API key would send in a quote with a hash and other times it wouldn't so some quotes would have two dashes instead of one.
+
 
 
 Any other useful information about your app
