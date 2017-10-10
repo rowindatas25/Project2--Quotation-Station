@@ -15,7 +15,7 @@ API- I used an API key from forismatic and created an axios call to render each 
 
 
 # Wireframes
-![alt-link][IMG_1169 3.JPG]
+![picture](IMG_1169 3.JPG)
 
 
 # User Stories 
