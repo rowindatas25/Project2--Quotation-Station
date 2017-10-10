@@ -12,6 +12,8 @@ All NPM packages- Used all the NPM packages like express, mustache-express, node
 
 API- I used an API key from forismatic and created an axios call to render each random quote onto the screen. Each time you refresh the page, the API key will render a new quote.
 
+SQL- This technology allowed for me to store quotes and user information in a database that would update with calls from the quotes model and user model. 
+
 
 
 # Wireframes
