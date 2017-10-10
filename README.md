@@ -17,7 +17,8 @@ SQL- This technology allowed for me to store quotes and user information in a da
 
 
 # Wireframes
-![picture](IMG_1169 3.JPG)
+![img_1169 2](https://user-images.githubusercontent.com/30875236/31392361-11c0f4dc-ada7-11e7-8abe-556d64f8d6de.JPG)
+
 
 
 # User Stories 
